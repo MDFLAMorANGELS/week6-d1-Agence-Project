@@ -4,7 +4,7 @@
 
 
 section {
-    margin: 8vh 10vh;
+    margin: 0vh 5vh;
     text-align: center;
 }
 
@@ -18,3 +18,22 @@ h3,h2{
     font-weight: 500;
 }
    
+@media screen and (max-width:640px) {
+    section {
+        margin: 0 2vh;
+    }
+    .nav {
+        margin-bottom: 16vh;
+    }
+    nav {
+        margin-bottom: 3vh;
+    }
+}
+
+@media screen and (min-width:640px) {
+    nav {
+        margin-bottom: 3vh;
+    }
+}
+
+  
