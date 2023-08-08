@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import showdown from 'showdown';
 
-function About() {
+const About = ({ text, title }) => {
+  const converter = new showdown.Converter();
+  const htmlText = converter.makeHtml(text);
+  const htmlTitle = converter.makeHtml(title);
+
+
   return (
-    <div>About</div>
-  )
+    <section className=''>
+      <div dangerouslySetInnerHTML={{ __html: htmlTitle }} />
+      <div dangerouslySetInnerHTML={{ __html: htmlText }} />
+    </section>
+  );
 }
 
-export default About
+export default About;

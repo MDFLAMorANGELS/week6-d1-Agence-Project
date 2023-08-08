@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+section {
+    margin: 8vh 10vh;
+    text-align: center;
+}
+
 img:hover {
     filter:hue-rotate(180deg) drop-shadow(1px 1px 1px
           red);
   }
+
+h3,h2{
+    font-size: 1.6em;
+    font-weight: 500;
+}
    
