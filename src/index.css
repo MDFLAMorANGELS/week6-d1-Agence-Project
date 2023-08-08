@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img:hover {
+    filter:hue-rotate(180deg) drop-shadow(1px 1px 1px
+          red);
+  }
+   
